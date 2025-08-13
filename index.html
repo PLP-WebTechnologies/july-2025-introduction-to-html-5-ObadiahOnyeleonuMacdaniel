@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- Declares the document type and version of HTML (HTML5) to ensure proper rendering -->
+<html lang="en"> <!-- Opens the HTML document and sets the primary language to English for accessibility and SEO -->
+
+<head> <!-- Contains metadata and information about the document that is not displayed directly on the page -->
+    <!-- Basic SEO -->
+    <meta charset="UTF-8"> <!-- Sets the character encoding to UTF-8 to support all characters and symbols -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive design on all devices by controlling viewport scaling -->
+    <meta name="description" content="Learn the basics of HTML5 structure, accessibility best practices, and beginner-friendly SEO techniques with this example web page."> <!-- Provides a summary for search engines and improves SEO ranking -->
+    <meta name="keywords" content="HTML5, Accessibility, SEO, Web Development, Semantic HTML"> <!-- Lists relevant keywords to help search engines index the page -->
+    <meta name="author" content="Your Name"> <!-- Specifies the author of the document for SEO and ownership -->
+
+    <title>HTML5 Semantic Structure Example</title> <!-- Sets the title of the page, displayed in browser tabs and used by search engines -->
+</head>
+
+<body> <!-- Contains all visible content of the webpage -->
+
+    <!-- HEADER -->
+    <header> <!-- Defines the top section of the page, usually containing the site title and main navigation -->
+        <h1>HTML5 Semantic Structure & Accessibility Example</h1> <!-- Main heading (H1) describing the primary topic of the page for SEO and accessibility -->
+        <nav aria-label="Main Navigation"> <!-- Defines the main navigation menu and provides an ARIA label for screen readers -->
+            <ul> <!-- Creates an unordered list for navigation links -->
+                <li><a href="#about" title="Learn more about this page">About</a></li> <!-- Navigation link to the "About" section with descriptive title for accessibility -->
+                <li><a href="#features" title="Discover features">Features</a></li> <!-- Navigation link to the "Features" section with descriptive title for accessibility -->
+                <li><a href="#contact" title="Contact us for more info">Contact</a></li> <!-- Navigation link to the "Contact" section with descriptive title for accessibility -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main> <!-- Defines the main content area of the webpage, unique to this page -->
+
+        <!-- ABOUT SECTION -->
+        <section id="about" aria-labelledby="about-heading"> <!-- Creates a section for the About content, linked to its heading for accessibility -->
+            <h2 id="about-heading">About This Page</h2> <!-- Second-level heading (H2) introducing the About section -->
+            <p>This example demonstrates how to structure a web page using <strong>HTML5 semantic elements</strong>, ensuring both accessibility for all users and SEO optimization for search engines.</p> <!-- Paragraph explaining the purpose of the example -->
+        </section>
+
+        <!-- FEATURES SECTION -->
+        <section id="features" aria-labelledby="features-heading"> <!-- Creates a section for the Features content -->
+            <h2 id="features-heading">Key Features</h2> <!-- H2 heading describing the section content -->
+
+            <article> <!-- Represents a self-contained piece of content within the Features section -->
+                <h3>Semantic HTML</h3> <!-- H3 heading to describe this specific feature -->
+                <p>Using elements such as <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code> to clearly define content structure.</p> <!-- Paragraph explaining the feature -->
+            </article>
+
+            <article> <!-- Another article for a separate feature -->
+                <h3>Accessibility</h3> <!-- H3 heading describing this feature -->
+                <p>Includes ARIA labels, descriptive link text, and logical heading hierarchy to support screen readers and assistive technologies.</p> <!-- Explanation of accessibility improvements -->
+            </article>
+
+            <article> <!-- Final feature article -->
+                <h3>SEO-Friendly</h3> <!-- H3 heading describing this feature -->
+                <p>Meta descriptions, keywords, and clear content organization improve search engine discoverability.</p> <!-- Explanation of SEO benefits -->
+            </article>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" aria-labelledby="contact-heading"> <!-- Creates the Contact section -->
+            <h2 id="contact-heading">Contact</h2> <!-- H2 heading introducing the Contact section -->
+            <p>If you’d like to learn more, feel free to reach out:</p> <!-- Introductory text for contact details -->
+            <address> <!-- Provides contact information in a semantic, machine-readable format -->
+                <p>Email: <a href="mailto:info@example.com">info@example.com</a></p> <!-- Clickable email link -->
+                <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p> <!-- Clickable phone link -->
+            </address>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer> <!-- Defines the bottom section of the page -->
+        <p>&copy; 2025 HTML5 Example Page. All rights reserved.</p> <!-- Copyright -->
+    </footer>
+
+</body>
+</html> <!-- Ends the HTML document -->
